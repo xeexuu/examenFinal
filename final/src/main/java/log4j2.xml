@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Properties>
+		<Property name="basePath">/home/mint/Escritorio/TareaFinalEntornos/eclipse-workspace/final/ficherosLogs
+		</Property>
+	</Properties>
+	<Appenders>
+		<Console name="laConsola">
+			<PatternLayout pattern=" %msg A LAS %d{HH:mm}%n%n" />
+		</Console>
+		<File name="elFichero" fileName="${basePath}/JESUS_LOGS_3EVA.log">
+			<PatternLayout
+				pattern=" %msg EL DÍA %d{dd} A LAS %d{HH:mm}%n%n" />
+		</File>
+	</Appenders>
+	<Loggers>
+		<Root level="all">
+			<AppenderRef ref="laConsola" level="debug" />
+			<AppenderRef ref="elFichero" level="info" />
+		</Root>
+	</Loggers>
+</Configuration>
